@@ -1,55 +1,56 @@
+// Color
+$left-green: #4BA21C;
+$font-color: #5C5C5C;
+$h1-color: darkgrey;
+// Font Size 
+$header-font-size: 36px;
+$font-style-normal: normal;
+$h1-size: 42px;
+// Family Font
+$header: 'Noto Sans JP',
+sans-serif;
+$questions: 'Bitter',
+serif;
+$txt-center: center;
+// Component 
+$width-component: 435px;
+$img-width: 383px;
+$img-height: 275px;
+$btn-q-width: 116px;
+$btn-start-width: 220px;
+$btn-height: 46px;
+$btn-font-size: 14px;
+$btn-radius: 23px;
+$btn-back-color: #FFF;
+$btn-opacity: 0.3;
+$btn-opacity-active: 1;
+$res-height: 670px;
+// STYLE
 * {
     box-sizing: border-box;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.selection {
-    position: absolute;
 }
 
 p.txt {
-    color: #4BA21C;
+    color: $left-green;
     margin-left: 75px;
 }
 
-.left {
-    width: 435px;
-}
-
+.left,
 .right {
-    width: 435px;
-}
-
-h2#welcome,
-h3#thank,
-.res,
-.bye {
-    line-height: 0;
-    font-family: 'Bitter', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    padding-bottom: 10px;
-    &h2#welcome {
-        width: 510px;
-    }
+    width: $width-component;
 }
 
 .image-right {
     background-image: url('./images/scooter.png');
     background-repeat: no-repeat;
-    width: 383px;
-    height: 275px;
+    width: $img-width;
+    height: $img-height;
     margin: 0 auto;
     position: absolute;
     left: 502px;
     background-size: cover;
     &.question1 {
         background-image: url('./images/netflix.png');
-        position: absolute;
         top: -50.17%;
     }
     &.question2 {
@@ -75,8 +76,8 @@ h3#thank,
         left: 60%;
     }
     &.image-opt-out {
-        top: -19.17%;
         background-image: url('./images/bye.png');
+        top: -19.17%;
         height: 315px;
     }
     &.image-help {
@@ -101,15 +102,15 @@ h3#thank,
     position: absolute;
     left: 297px;
     top: 320px;
-    color: #5C5C5C;
+    color: $font-color;
     display: flex;
 }
 
 .q1 {
     position: absolute;
-    top: 275px;
+    top: $img-height;
     line-height: 43px;
-    color: #5C5C5C;
+    color: $font-color;
     display: flex;
     position: absolute;
     width: 880px;
@@ -117,19 +118,19 @@ h3#thank,
 }
 
 .btn {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 14px;
+    font-family: $header;
+    font-size: $btn-font-size;
     line-height: 42px;
-    align-items: center;
-    text-align: center;
+    align-items: $txt-center;
+    text-align: $txt-center;
     letter-spacing: 0.05em;
-    color: #4BA21C;
+    color: $left-green;
     border: 1px solid black;
-    width: 220px;
-    border-radius: 23px;
-    border: 2px solid #4BA21C;
-    height: 46px;
-    background-color: white;
+    width: $btn-start-width;
+    border-radius: $btn-radius;
+    border: 2px solid $left-green;
+    height: $btn-height;
+    background-color: $btn-back-color;
     &.btn-left {
         margin-left: -56px;
     }
@@ -139,17 +140,17 @@ h3#thank,
     &.back,
     &.next,
     &.nextSecond,
-    &.nextThird.ans.active,
+    &.nextThird,
     &.nextFour,
     &.nextFive,
     &.nextSix,
     &.nextSeven {
-        width: 116px;
+        width: $btn-q-width;
     }
     &.back {
-        color: #5C5C5C;
-        border: 2px solid #5C5C5C;
-        background-color: white;
+        color: $font-color;
+        border: 2px solid $font-color;
+        background-color: $btn-back-color;
     }
     &.next,
     &.nextSecond,
@@ -159,7 +160,7 @@ h3#thank,
     &.nextSix,
     &.nextSeven {
         margin-right: 33px;
-        opacity: 0.3;
+        opacity: $btn-opacity;
     }
     &.nextFour,
     &.nextFive,
@@ -185,7 +186,7 @@ h3#thank,
     height: 100vh;
     left: 0px;
     top: 0px;
-    background: #4BA21C;
+    background: $left-green;
 }
 
 .second {
@@ -198,15 +199,15 @@ h3#thank,
     background: #FFFFFF;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    text-align: center;
+    text-align: $txt-center;
     padding-top: 40px;
 }
 
 h1 {
     line-height: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: darkgrey;
-    font-size: 42px;
+    font-family: $header;
+    color: $h1-color;
+    font-size: $h1-size;
 }
 
 h2 {
@@ -215,34 +216,33 @@ h2 {
 
 h2,
 h3 {
-    font-family: 'Bitter', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
+    font-family: $questions;
+    font-style: $font-style-normal;
+    font-size: $header-font-size;
     padding-bottom: 10px;
     margin: 0;
 }
 
 .hero {
     margin-left: 72px;
-    color: #4BA21C;
+    color: $left-green;
 }
 
 span {
-    color: #4BA21C
+    color: $left-green
 }
 
 .number {
     position: absolute;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: $header;
     width: 57px;
     height: 43px;
     left: 37px;
     top: 27px;
-    font-size: 36px;
+    font-size: $header-font-size;
     line-height: 43px;
     display: flex;
-    align-items: center;
+    align-items: $txt-center;
     letter-spacing: 0.05em;
     color: rgba(255, 255, 255, 0.59);
 }
@@ -251,7 +251,6 @@ span {
     display: none;
 }
 
-// QUESTION PAGE
 .opt {
     position: absolute;
     display: flex;
@@ -259,7 +258,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-between;
     top: 88px;
-    text-align: center;
+    text-align: $txt-center;
 }
 
 .options {
@@ -272,23 +271,23 @@ span {
     box-sizing: border-box;
     border-radius: 6px;
     font-size: 28px;
-    color: #5C5C5C;
+    color: $font-color;
     line-height: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: $header;
 }
 
 .selected {
-    border: 2px solid #4BA21C;
+    border: 2px solid $left-green;
     background: rgba(82, 174, 50, 0.05);
 }
 
 button.btn.btn-left.opt-out {
-    border: 2px solid #5C5C5C;
-    color: #5C5C5C;
+    border: 2px solid $font-color;
+    color: $font-color;
 }
 
 .active {
-    opacity: 1!important;
+    opacity: $btn-opacity-active!important;
     &:hover {
         cursor: pointer;
     }
@@ -299,16 +298,12 @@ button[type="button"] {
     outline: none !important;
 }
 
-.two {
-    display: block;
-}
-
 .sad,
 .neutral,
 .happy {
     background-repeat: no-repeat;
-    width: 383px;
-    height: 275px;
+    width: $img-width;
+    height: $img-height;
     margin: 0 auto;
     position: absolute;
     &.sad {
@@ -335,7 +330,7 @@ button[type="button"] {
 .result-need-help .second,
 .result-champion .second,
 .result-doing-well .second {
-    height: 670px;
+    height: $res-height;
 }
 
 .result-need-help .q1,
@@ -343,12 +338,12 @@ button[type="button"] {
 .result-doing-well .q1 {
     border-top: 2px solid grey;
     padding-top: 100px;
-    justify-content: center;
+    justify-content: $txt-center;
     gap: 40px;
     opacity: 1!important;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: $txt-center;
     padding: 0;
 }
 
@@ -358,14 +353,13 @@ button[type="button"] {
 }
 
 button.btn.btn-right.next-please {
-    width: 116px;
+    width: $btn-q-width;
     &:hover {
         cursor: pointer;
     }
 }
 
 .questionsPageThree .opt button.options.choosen {
-    width: 121px;
     justify-content: end;
     height: 120px;
     width: 121px;
@@ -389,4 +383,3 @@ button.btn.btn-right.next-please {
 .questionsPageFive h2 {
     font-size: 35px;
 }
-
