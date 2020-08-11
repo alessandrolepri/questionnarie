@@ -14,11 +14,11 @@ The app should take the user through a series of questions and present 1 out of 
 
 ## TECH REQUIREMENTS
 
-- Pleasecommityourcodetoagitrepositoryandsharewithusapubliclink.Ashortreadmewithdirectionsshouldbeincluded.
+- Please commit your code to a git repository and share with us a public link.A short readme with directions should be included.
 
-- Pleaseuseabundle/taskrunnerlikewebpack/gulp/grunttobuildyourproject.
+- Please use a bundle/task runner like webpack/gulp/grunt to build your project.
 
-- PleaseuseaCSSpreprocessorlikeSCSS/LESS.
+- Please use a CSS preprocessor like SCSS/LESS.
 
 
 ## How to run
